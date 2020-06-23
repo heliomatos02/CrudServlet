@@ -42,5 +42,6 @@ public class CadastroPessoa extends HttpServlet{
 		pessoa.setDataNascimento(dataNascimento);
 		pessoa.setNome(nome);
 		banco.adiciona(pessoa);
+		resp.sendRedirect("index.jsp");
 	}
 }
