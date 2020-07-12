@@ -39,7 +39,7 @@ public class CadastroPessoa extends HttpServlet{
 			throw new ServletException(e);
 		}
 		pessoa.setCpf(cpf);
-		pessoa.setDataNascimento(dataNascimento);
+		pessoa.setDataNascimento(dataNascimentoFormatada);
 		pessoa.setNome(nome);
 		banco.adiciona(pessoa);
 		resp.sendRedirect("index.jsp");

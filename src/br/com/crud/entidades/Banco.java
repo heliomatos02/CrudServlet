@@ -10,13 +10,15 @@ public class Banco {
 	
 	static {
 		Pessoa pessoa = new Pessoa();
-		pessoa.setId(id++);//++ é pos incremento, ou seja coloca um depois incrementa.
+		pessoa.setId(id++);
 		pessoa.setNome("Alana");
+		pessoa.setCpf("789654123");
 		listaPessoas.add(pessoa);
 		
 		
 		pessoa = new Pessoa();
 		pessoa.setId(id++);
+		pessoa.setCpf("789654856");
 		pessoa.setNome("Ursula");
 		listaPessoas.add(pessoa);
 		

@@ -1,11 +1,13 @@
 package br.com.crud.entidades;
 
+import java.util.Date;
+
 public class Pessoa {
 
 	private int id;
 	private String nome;
 	private String cpf;
-	private String dataNascimento;
+	private Date dataNascimento = new Date();
 	
 	public String getNome() {
 		return nome;
@@ -22,14 +24,6 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-	
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
 
 	public int getId() {
 		return id;
@@ -37,5 +31,13 @@ public class Pessoa {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 }
