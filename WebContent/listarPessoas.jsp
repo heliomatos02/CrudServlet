@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Insert title here</title>
+		<title>Listar Pessoas</title>
 	</head>
 	<body>
 		<br>Lista pessoas<br>
@@ -20,7 +20,7 @@
 				</li>
 			</c:forEach>
 		</ul>
-		<input type="button" id="btnCancelar"  value="CANCELAR" 
+		<input type="button" id="btnVoltar"  value="Voltar" 
 	OnClick="parent.location.href='index.jsp'"/>
 	</body>
 </html>

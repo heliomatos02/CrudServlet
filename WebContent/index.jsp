@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<c:url value="/listarPessoas" var="linkServletListarPessoas"/>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +16,10 @@
 		<input type="text" name="cpf"> Pesquisar<br><br>
 		<input type="text" name="exclui"> Excluir<br><br>
 		<input type="text" name="editar"> Editar<br><br>
-		<input type="button" id="btnListarTodos"  value="Listar Todos"
-		 OnClick=""/><br><br>
+		
+		 
+		 <form action="${linkServletListarPessoas}">
+		 <input type="submit" id="btnListarTodos"  value="Listar Todos"/><br><br>
+		 </form>
 </body>
 </html>
