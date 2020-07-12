@@ -13,11 +13,7 @@
 <body>
 		<input type="button" id="btnNovo"  value="Novo Cadastro"
 		 OnClick="parent.location.href='novaPessoa.jsp'"/><br><br>
-		<input type="text" name="cpf"> Pesquisar<br><br>
-		<input type="text" name="exclui"> Excluir<br><br>
-		<input type="text" name="editar"> Editar<br><br>
-		
-		 
+
 		 <form action="${linkServletListarPessoas}">
 		 <input type="submit" id="btnListarTodos"  value="Listar Todos"/><br><br>
 		 </form>

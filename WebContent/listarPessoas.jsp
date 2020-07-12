@@ -16,7 +16,8 @@
 			<c:forEach items="${pessoas}" var="pessoa">
 				<li>
 					${pessoa.nome} - <fmt:formatDate value="${pessoa.dataNascimento}" pattern="dd/MM/yyyy"/> - ${pessoa.cpf}
-					
+					<a href="/CRUD/mostraPessoa?id=${pessoa.id}">editar</a>
+					<a href="/CRUD/removePessoa?id=${pessoa.id}">remove</a>
 				</li>
 			</c:forEach>
 		</ul>

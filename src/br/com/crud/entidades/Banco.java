@@ -34,7 +34,7 @@ public class Banco {
 		}
 	}
 	
-	public void removeEmpresa(Integer id) {
+	public void removePessoa(Integer id) {
 		
 		Iterator<Pessoa> it = listaPessoas.iterator();
 		
@@ -46,7 +46,7 @@ public class Banco {
 		}
 	}
 
-	public Pessoa buscaEmpresaPeloId(Integer id) {
+	public Pessoa buscaPessoaPeloId(Integer id) {
 		Iterator<Pessoa> it = listaPessoas.iterator();
 		while (it.hasNext()) {
 			Pessoa pes = it.next();
@@ -57,7 +57,7 @@ public class Banco {
 		return null;
 	}
 	
-	public List<Pessoa> getListaEmpresa() {
+	public List<Pessoa> getListaPessoa() {
 		return Banco.listaPessoas;
 	}
 }

@@ -22,7 +22,7 @@ public class ListarPessoas extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Banco banco = new Banco();
 		RequestDispatcher rd = request.getRequestDispatcher("/listarPessoas.jsp");
-		request.setAttribute("pessoas", banco.getListaEmpresa());
+		request.setAttribute("pessoas", banco.getListaPessoa());
 		rd.forward(request, response);
 	}
 
