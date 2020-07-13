@@ -11,7 +11,7 @@ public class Banco {
 	static {
 		Pessoa pessoa = new Pessoa();
 		pessoa.setId(id++);
-		pessoa.setNome("Alana");
+		pessoa.setNome("Fulano");
 		pessoa.setCpf("789654123");
 		listaPessoas.add(pessoa);
 		
@@ -19,7 +19,7 @@ public class Banco {
 		pessoa = new Pessoa();
 		pessoa.setId(id++);
 		pessoa.setCpf("789654856");
-		pessoa.setNome("Ursula");
+		pessoa.setNome("Ciclano");
 		listaPessoas.add(pessoa);
 		
 	}

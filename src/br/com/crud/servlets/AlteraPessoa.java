@@ -25,24 +25,13 @@ public class AlteraPessoa extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nome = request.getParameter("nome");
-		String dataNascimento = request.getParameter("data");
 		String id = request.getParameter("id");
-		String cpf = request.getParameter("cpf");
-		Integer idpessoa = Integer.parseInt(id);
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		Date dataNascimentoFormatada = null;
 		
-		try {
-			dataNascimentoFormatada = sdf.parse(dataNascimento);
-		} catch (ParseException e) {
-			throw new ServletException(e);
-		}
+		Integer idpessoa = Integer.parseInt(id);
 		
 		Banco banco = new Banco();
 		Pessoa pessoa = banco.buscaPessoaPeloId(idpessoa);
 		pessoa.setNome(nome);
-		pessoa.setDataNascimento(dataNascimentoFormatada);
-		pessoa.setCpf(cpf);
 		response.sendRedirect("index.jsp");
 	}
 

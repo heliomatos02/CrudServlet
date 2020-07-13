@@ -13,7 +13,6 @@
 
 <form action="${linkServletNovaPessoa}" method="post">
 	Nome: <input type="text" name="nome"><br><br>
-	Data nascimento: <input type="text" name="data"><br><br>
 	CPF: <input type="text" name="cpf"><br><br>
 	<input type="submit" value="SALVAR" id="btnSalvar"/><tb>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

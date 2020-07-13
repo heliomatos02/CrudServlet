@@ -7,7 +7,7 @@ public class Pessoa {
 	private int id;
 	private String nome;
 	private String cpf;
-	private Date dataNascimento = new Date();
+	
 	
 	public String getNome() {
 		return nome;
@@ -33,11 +33,5 @@ public class Pessoa {
 		this.id = id;
 	}
 
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
+	
 }

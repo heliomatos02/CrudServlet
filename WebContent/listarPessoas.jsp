@@ -2,7 +2,6 @@
 <%@ page import="java.util.List"%>
 <%@ page import="br.com.crud.entidades.Pessoa"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,13 +10,13 @@
 		<title>Listar Pessoas</title>
 	</head>
 	<body>
-		<br>Lista pessoas<br>
+		<br>Pessoas cadastradas<br>
 		<ul>
 			<c:forEach items="${pessoas}" var="pessoa">
 				<li>
-					${pessoa.nome} - <fmt:formatDate value="${pessoa.dataNascimento}" pattern="dd/MM/yyyy"/> - ${pessoa.cpf}
-					<a href="/CRUD/mostraPessoa?id=${pessoa.id}">editar</a>
-					<a href="/CRUD/removePessoa?id=${pessoa.id}">remove</a>
+					Nome: ${pessoa.nome} - CPF:  ${pessoa.cpf} -
+					<a href="/CRUD/mostraPessoa?id=${pessoa.id}">editar</a> -
+					<a href="/CRUD/removePessoa?id=${pessoa.id}">remove</a><br><br>
 				</li>
 			</c:forEach>
 		</ul>

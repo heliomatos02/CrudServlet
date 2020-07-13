@@ -27,19 +27,10 @@ public class CadastroPessoa extends HttpServlet{
 		Pessoa pessoa = new Pessoa();
 		Banco banco = new Banco();
 		
-		Date dataNascimentoFormatada = null;
 		String nome = req.getParameter("nome");
 		String cpf = req.getParameter("cpf");
-		String dataNascimento = req.getParameter("data");
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		try {
-			dataNascimentoFormatada = sdf.parse(dataNascimento);
-		} catch (ParseException e) {
-			throw new ServletException(e);
-		}
 		pessoa.setCpf(cpf);
-		pessoa.setDataNascimento(dataNascimentoFormatada);
 		pessoa.setNome(nome);
 		banco.adiciona(pessoa);
 		resp.sendRedirect("index.jsp");
